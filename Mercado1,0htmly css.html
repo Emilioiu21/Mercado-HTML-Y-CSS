@@ -45,7 +45,6 @@
 
         .banner {
             background-color: #4CAF50;
-            color: ;
             padding: 50px;
             text-align: center;
         }
@@ -132,7 +131,7 @@
             display: none;
         }
 
- /* Estilos para el carrito */
+        /* Estilos para el carrito */
         #carrito {
             background-color: #fff;
             padding: 30px;
@@ -204,6 +203,20 @@
             background-color: #e41f25;
         }
 
+        /* Estilos para el menú de redes sociales */
+        .social-menu {
+            margin-top: 10px;
+        }
+
+        .social-menu a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-menu a:hover {
+            color: #ff9800;
+        }
     </style>
 </head>
 <body>
@@ -263,8 +276,9 @@
                 <p class="price">5.00Bs</p>
                 <button class="buy-btn" data-product="Pan Frances 8U" data-price="5.00">Añadir al carrito</button>
             </div>
-<div class="product">
-                <img src="https://amarket.com.bo/cdn/shop/files/7770017260034_1200x1200.jpg?v=1712344526"Producto 6">
+
+            <div class="product">
+                <img src="https://amarket.com.bo/cdn/shop/files/7770017260034_1200x1200.jpg?v=1712344526" alt="Producto 6">
                 <h3>Pipocas 300g</h3>
                 <p class="price">10.00Bs</p>
                 <button class="buy-btn" data-product="Pipocas 300g" data-price="10.00">Añadir al carrito</button>
@@ -290,15 +304,16 @@
                 <p class="price">7.00Bs</p>
                 <button class="buy-btn" data-product="Azúcar Guabira 1kg" data-price="7.00">Añadir al carrito</button>
             </div>
-<div class="product">
-                <img src="https://amarket.com.bo/cdn/shop/files/7891000304808_695x695.jpg?v=1712344304"Producto 10">
+
+            <div class="product">
+                <img src="https://amarket.com.bo/cdn/shop/files/7891000304808_695x695.jpg?v=1712344304" alt="Producto 10">
                 <h3>Nescafé 200g</h3>
                 <p class="price">55.00Bs</p>
                 <button class="buy-btn" data-product="Nescafé 200g" data-price="55.00">Añadir al carrito</button>
             </div>
 
             <div class="product">
-                <img src="https://amarket.com.bo/cdn/shop/files/07771214003271_695x695.jpg?v=1712344216"Producto 11">
+                <img src="https://amarket.com.bo/cdn/shop/files/07771214003271_695x695.jpg?v=1712344216" alt="Producto 11">
                 <h3>Ketchup Kris 500g</h3>
                 <p class="price">20.00Bs</p>
                 <button class="buy-btn" data-product="Ketchup Kris 500g" data-price="20.00">Añadir al carrito</button>
@@ -367,6 +382,12 @@
     <!-- Pie de página -->
     <footer>
         <p>&copy; 2024 Tienda Virtual - Todos los derechos reservados</p>
+        <nav class="social-menu">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </nav>
     </footer>
 
     <script>
@@ -434,6 +455,11 @@
                     actualizarCarrito();
                 });
             });
+        }
+    </script>
+</body>
+</html>
+
         }
     </script>
 </body>
